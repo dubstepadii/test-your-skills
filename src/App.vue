@@ -1,12 +1,9 @@
 <template>
   <div id="app">
     <header>
-      <router-link :to="{ name: 'home' }">Vue.js PWA</router-link>
-      <router-link :to="{ name: 'router' }">Router</router-link>
-      <router-link :to="{ name: 'store' }">Store</router-link>
+      <router-link :to="{ name: 'home' }">Test</router-link>
     </header>
     <main>
-      <img src="@/assets/images/logo.png" alt="Vue.js PWA">
       <transition appear mode="out-in" name="slide-fade">
         <router-view></router-view>
       </transition>
