@@ -1,5 +1,4 @@
 import Vue from 'vue';
-import axios from 'axios';
 import { sync } from 'vuex-router-sync';
 import App from './App';
 import router from './router';
@@ -17,10 +16,6 @@ new Vue({
     return {
       results: [],
     };
-  },
-  mounted() {
-    axios.get('hhttp://mobi.connectedcar360.net/api/?op=list')
-      .then((response) => { (this.results = response.data); });
   },
   template: '<App/>',
   functional: true,
